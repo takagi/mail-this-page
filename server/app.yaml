@@ -1,0 +1,9 @@
+application: mail-this-page
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: mail-this-page.application
