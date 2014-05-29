@@ -20,17 +20,17 @@ def log( url, title, msg ):
 
 def get_page_url( request ):
     url = request.get( 'u' )
-    if url != None:
-        return url
-    else:
+    if url == None:
         raise Exception( "no page url" )
+    if url == '':
+        raise Exception( "no page url" )
+    return url
 
 def get_page_title( request ):
     title = request.get( 't' )
-    if title != None:
-        return title
-    else:
+    if title == None:
         raise Exception( "no page title" )
+    return title
 
 
 # mail functions
