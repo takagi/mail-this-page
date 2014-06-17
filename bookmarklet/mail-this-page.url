@@ -1,0 +1,1 @@
+javascript:(function(){var d=document,z=d.createElement('scr'+'ipt'),b=d.body,l=d.location;z.setAttribute('src','https://mail-this-page.appspot.com/?u='+encodeURIComponent(l.href)+'&t='+encodeURIComponent(d.title));b.appendChild(z);})()
